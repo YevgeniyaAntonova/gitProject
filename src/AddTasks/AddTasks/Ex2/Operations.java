@@ -1,4 +1,4 @@
-package AddTasks.Ex2;
+package AddTasks.AddTasks.Ex2;
 import java.util.Scanner;
 
 public class Operations {

@@ -1,4 +1,4 @@
-package AddTasks.Ex3;
+package AddTasks.AddTasks.Ex3;
 
 public class Jewels {
     String jewels;

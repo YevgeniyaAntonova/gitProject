@@ -1,4 +1,4 @@
-package AddTasks.Ex1;
+package AddTasks.AddTasks.Ex1;
 
 public class IPAddress {
     String ipAddress;

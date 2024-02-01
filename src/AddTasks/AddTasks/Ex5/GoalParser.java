@@ -6,10 +6,8 @@ public class GoalParser {
         this.command = command;
     }
     public String Interpret(){
-        /*command.replace("(al)", "al");
-        System.out.println(command);*/
-        //command.replace("()", "o");
-        command.replace("()", "[]");
+        command = command.replace("(al)", "al");
+        command = command.replace("()", "o");
         return command;
     }
 }

@@ -1,6 +1,6 @@
-package AddTasks.Ex1;
+package AddTasks.AddTasks.Ex1;
 
-import AddTasks.Ex1.IPAddress;
+import AddTasks.AddTasks.Ex1.IPAddress;
 
 import java.util.Scanner;
 
