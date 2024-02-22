@@ -1,6 +1,8 @@
 package module3.ArrayList;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.Scanner;
 
 public class ArrayListTask {
@@ -8,7 +10,7 @@ public class ArrayListTask {
     public static void main(String[] args) {
         ArrayList<String> names = new ArrayList<String>();
        addlist(names);
-        exercise7();
+        exercise8(names);
 
 
     }
@@ -76,6 +78,14 @@ public class ArrayListTask {
         } else {
             System.out.println("element is not absent");
         }
+    }
+
+    public static void exercise8(ArrayList<String> names){
+        System.out.println("before sort:");
+        System.out.println(names);
+        Collections.sort(names);
+        System.out.println("after sort:");
+        System.out.println(names);
 
     }
 }
