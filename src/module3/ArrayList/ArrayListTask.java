@@ -10,7 +10,7 @@ public class ArrayListTask {
     public static void main(String[] args) {
         ArrayList<String> names = new ArrayList<String>();
        addlist(names);
-        exercise9(names);
+        exercise10(names);
 
 
     }
@@ -99,6 +99,11 @@ public class ArrayListTask {
         System.out.println("after:");
         Collections.copy(names,names2);
         System.out.println("after:");
+        System.out.println(names);
+    }
+
+    public static void exercise10(ArrayList<String> names){
+        Collections.shuffle(names);
         System.out.println(names);
     }
 }
