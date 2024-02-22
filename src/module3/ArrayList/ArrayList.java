@@ -8,6 +8,7 @@ public class ArrayList {
         java.util.ArrayList<String> names = new java.util.ArrayList<String>();
        addlist(names);
         exercise2(names);
+        exercise3(names);
 
     }
     public static void addlist(java.util.ArrayList<String> names) {
@@ -25,8 +26,11 @@ public class ArrayList {
         for (int i = 0; i < names.size(); i++){
             name = names.get(i);
             System.out.println(name);
-
         }
+    }
+    public static void exercise3(java.util.ArrayList<String> names){
+        names.add(0,"Zheniya");
+        System.out.println(names);
 
     }
 }
