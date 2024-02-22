@@ -1,18 +1,13 @@
 package module3.ArrayList;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Scanner;
+import java.util.*;
 
 public class ArrayListTask {
     static  Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
         ArrayList<String> names = new ArrayList<String>();
        addlist(names);
-        exercise12(names);
-
-
+        exercise19();
     }
     public static void addlist(ArrayList<String> names) {
 
@@ -118,5 +113,59 @@ public class ArrayListTask {
 
         System.out.println("after:");
         System.out.println(names.subList(1,3));
+    }
+
+    public static void exercise13(ArrayList<String> names){
+        ArrayList<String> names2 = new ArrayList<>();
+        names2.add("Alice");
+        names2.add("Tom");
+        System.out.println(names2);
+        for (String n : names2) {
+            for (String s : names){
+                if (s.contains(n)) {
+                    System.out.println("YES");
+                } else {
+                    System.out.println("NO");
+                }}
+        }
+    }
+
+    public static void exercise14(ArrayList<String> names){
+        Collections.swap(names,1,4);
+        System.out.println("after:");
+        System.out.println(names);
+    }
+
+    public static void exercise15(ArrayList<String> names){
+        ArrayList<String> names2 = new ArrayList<>();
+        names2.add("Bill");
+        names2.add("Jess");
+        System.out.println(names2);
+        ArrayList<String> nameBig = new ArrayList<>();
+        nameBig.addAll(names);
+        nameBig.addAll(names2);
+        System.out.println(nameBig);
+    }
+
+    public static void exercise16(ArrayList<String> names){
+        ArrayList<String> cloneNames = (ArrayList<String>) names.clone();
+        System.out.println(cloneNames);
+    }
+
+    public static void exercise17(ArrayList<String> names){
+        names.removeAll(names);
+        System.out.println(names);
+    }
+
+    public static void exercise18(ArrayList<String> names){
+        System.out.println(names.isEmpty());
+        ArrayList<String> empty = new ArrayList<>();
+        System.out.println(empty.isEmpty());
+    }
+
+    public static void exercise19(){
+        String[] names = new String[]{"Tom", "Robert", "Alice", "Kate", "Sam"};
+        String[] nameNew = Arrays.copyOfRange(names,1, 3);
+        System.out.println(Arrays.toString(nameNew));
     }
 }
