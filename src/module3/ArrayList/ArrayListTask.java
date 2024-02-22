@@ -10,7 +10,7 @@ public class ArrayListTask {
     public static void main(String[] args) {
         ArrayList<String> names = new ArrayList<String>();
        addlist(names);
-        exercise11(names);
+        exercise12(names);
 
 
     }
@@ -110,5 +110,13 @@ public class ArrayListTask {
     public static void exercise11(ArrayList<String> names){
         Collections.reverse(names);
         System.out.println(names);
+    }
+
+    public static void exercise12(ArrayList<String> names){
+        System.out.println("before:");
+        System.out.println(names);
+
+        System.out.println("after:");
+        System.out.println(names.subList(1,3));
     }
 }
