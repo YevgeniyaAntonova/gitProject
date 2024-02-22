@@ -7,8 +7,8 @@ public class ArrayList {
     public static void main(String[] args) {
         java.util.ArrayList<String> names = new java.util.ArrayList<String>();
        addlist(names);
-        exercise2(names);
-        exercise3(names);
+        exercise4(names);
+
 
     }
     public static void addlist(java.util.ArrayList<String> names) {
@@ -31,6 +31,16 @@ public class ArrayList {
     public static void exercise3(java.util.ArrayList<String> names){
         names.add(0,"Zheniya");
         System.out.println(names);
+    }
+    public static void exercise4(java.util.ArrayList names){
+        System.out.println("до извления:");
+        System.out.println(names);
+        System.out.println("номер элемента для извлечения");
+        int n = scanner.nextInt();
+        names.remove(n-1);
+        System.out.println("после извлечения:");
+        System.out.println(names);
+
 
     }
 }
