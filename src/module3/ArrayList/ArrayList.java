@@ -7,7 +7,7 @@ public class ArrayList {
     public static void main(String[] args) {
         java.util.ArrayList<String> names = new java.util.ArrayList<String>();
        addlist(names);
-        exercise4(names);
+        exercise5(names);
 
 
     }
@@ -21,6 +21,7 @@ public class ArrayList {
         names.add("Sam");
         System.out.println(names);
     }
+
     public static void exercise2(java.util.ArrayList<String> names){
         String name;
         for (int i = 0; i < names.size(); i++){
@@ -28,10 +29,12 @@ public class ArrayList {
             System.out.println(name);
         }
     }
+
     public static void exercise3(java.util.ArrayList<String> names){
         names.add(0,"Zheniya");
         System.out.println(names);
     }
+
     public static void exercise4(java.util.ArrayList names){
         System.out.println("до извления:");
         System.out.println(names);
@@ -40,7 +43,14 @@ public class ArrayList {
         names.remove(n-1);
         System.out.println("после извлечения:");
         System.out.println(names);
+    }
 
-
+    public static void exercise5(java.util.ArrayList names){
+        System.out.println("номер элемента для обновления");
+        int n = scanner.nextInt();
+        System.out.println("введите на что обновить");
+        String newValue = scanner.next();
+        names.set(n, newValue);
+        System.out.println(names);
     }
 }
