@@ -1,17 +1,18 @@
 package module3.ArrayList;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
-public class ArrayList {
+public class ArrayListTask {
     static  Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
-        java.util.ArrayList<String> names = new java.util.ArrayList<String>();
+        ArrayList<String> names = new ArrayList<String>();
        addlist(names);
-        exercise5(names);
+        exercise7();
 
 
     }
-    public static void addlist(java.util.ArrayList<String> names) {
+    public static void addlist(ArrayList<String> names) {
 
         //Tom,Robert,Alice,Kate,Sam
         names.add("Tom");
@@ -22,20 +23,20 @@ public class ArrayList {
         System.out.println(names);
     }
 
-    public static void exercise2(java.util.ArrayList<String> names){
+    public static void exercise2(ArrayList<String> names){
         String name;
-        for (int i = 0; i < names.size(); i++){
-            name = names.get(i);
+        for (String s : names) {
+            name = s;
             System.out.println(name);
         }
     }
 
-    public static void exercise3(java.util.ArrayList<String> names){
-        names.add(0,"Zheniya");
+    public static void exercise3(ArrayList<String> names){
+        names.addFirst("Zheniya");
         System.out.println(names);
     }
 
-    public static void exercise4(java.util.ArrayList names){
+    public static void exercise4(ArrayList<String> names){
         System.out.println("до извления:");
         System.out.println(names);
         System.out.println("номер элемента для извлечения");
@@ -45,12 +46,36 @@ public class ArrayList {
         System.out.println(names);
     }
 
-    public static void exercise5(java.util.ArrayList names){
+    public static void exercise5(ArrayList<String> names){
         System.out.println("номер элемента для обновления");
         int n = scanner.nextInt();
         System.out.println("введите на что обновить");
         String newValue = scanner.next();
         names.set(n, newValue);
         System.out.println(names);
+    }
+
+    public static void exercise6(ArrayList<String> names){
+        names.remove(3-1);
+        System.out.println(names);
+    }
+
+    public static void exercise7(){
+
+        ArrayList<Integer> number = new ArrayList<>();
+        number.add(6);
+        number.add(9);
+        number.add(15);
+        number.add(60);
+        number.add(0);
+
+        System.out.println("enter element:");
+        int n = scanner.nextInt();
+        if(number.contains(n)){
+            System.out.println("element in list");
+        } else {
+            System.out.println("element is not absent");
+        }
+
     }
 }
