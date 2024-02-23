@@ -1,4 +1,4 @@
-package LibraryProject;
+package LibraryProject.Items;
 
 public interface PaperItem {
 
